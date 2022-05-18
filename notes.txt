@@ -1,0 +1,14 @@
+* Request is made to a NGINX server .
+* NGNIX makes a request to web server which responds by sedning the content to NGINX
+* NGINX sends a response to Frontend .
+* technical term : REVERSE PROXY
+* Used when multiple servers are used : basically when we have a huge traffic
+* NGINX acts a load balancer
+* NGINX forwards the request from frontend to a server available .
+* another usecase would be for Encryption : Basically rather than Encrypting each server we can encrypt just the main NGINX server.
+* events {
+    worker_connections  1024;
+  }
+
+  events{} --> context
+  worker_connections  1024; ---> directives
